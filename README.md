@@ -1,35 +1,105 @@
-# NLP-Sentiment-Analysis-Project
+Sentiment Analysis Using NLP (End-to-End ML Project)
 
-A Natural Language Processing (NLP) project for sentiment analysis that classifies text into Positive, Negative, or Neutral. Deployed using Streamlit for real-time sentiment prediction
+This project builds a Natural Language Processing (NLP) model to classify customer reviews into Positive, Negative, or Neutral sentiments.
+The final model is deployed using Streamlit for real-time sentiment prediction.
 
-Overview
-This repository contains a Natural Language Processing (NLP) project focused on analyzing and classifying the sentiment of customer product reviews. The goal is to build a robust model capable of classifying text into Positive, Negative, or Neutral sentiment categories, followed by an interactive Streamlit web application for real-time analysis.
+📖 Project Overview
 
-The analysis is documented in the Jupyter Notebook: Sentiment_Analysis (1).ipynb.
+The objective of this project is to analyze product reviews and automatically classify their sentiment.
+The dataset contains 1,440 customer reviews.
 
-Deployment and Interaction: Handled by the Python application (app.py), which uses Streamlit to provide an interactive web interface for real-time sentiment prediction.
+The project covers the complete machine learning pipeline:
 
-🚀 Features
-Data Acquisition and Cleaning: Loads and processes a dataset of 1440 product reviews.
+Data Cleaning
 
-Exploratory Data Analysis (EDA): Includes analysis of data structure, check for missing values and duplicates (none found).
+Exploratory Data Analysis (EDA)
 
-Sentiment Mapping: Converts numerical ratings (1-5) into categorical sentiment labels (1-2 = Negative, 3 = Neutral, 4-5 = Positive).
+Text Preprocessing
 
-Text Preprocessing: Cleans review text by performing lowercasing, removing punctuation/special characters, and eliminating common English stopwords.
+Feature Engineering
 
-Frequent Word Analysis: Identifies the top 10 most frequent words for each sentiment class (Positive, Negative, Neutral).
+Model Training
 
-Interactive Web App: A Streamlit application is included for users to input custom text, get an instant sentiment prediction, view associated text statistics (word/character count), and maintain a prediction history.
+Model Evaluation
+
+Deployment
+
+🧹 Text Preprocessing
+
+Lowercasing text
+
+Removing punctuation and special characters
+
+Removing stopwords using NLTK
+
+Text normalization
+
+📊 Feature Engineering
+
+TF-IDF Vectorization
+
+🤖 Machine Learning Models Used
+
+Logistic Regression
+
+Naive Bayes
+
+Support Vector Machine (SVM)
+
+📈 Model Evaluation
+
+The models were evaluated using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+Best Model Accuracy: 87%
+
+The SVM model achieved the best performance with balanced results across all three sentiment classes.
+
+🌐 Deployment
+
+The final model is deployed using Streamlit.
+
+Features of the Web App:
+
+Real-time sentiment prediction
+
+Word and character count
+
+Prediction history
+
+Run locally using:
+
+streamlit run app.py
 
 🛠️ Technologies & Libraries
-The project is built entirely in Python and uses the following key libraries:
 
-Data Manipulation & Analysis: pandas, numpy
+Python
 
-Natural Language Processing (NLP): nltk (for stopwords), re
+Pandas
 
-Visualization: matplotlib.pyplot, seaborn, wordcloud
+NumPy
 
-Interactive Application: streamlit (implied by app code)
+NLTK
 
+Scikit-learn
+
+Matplotlib
+
+Seaborn
+
+WordCloud
+
+Streamlit
+
+📂 Project Structure
+├── Sentiment_Analysis.ipynb   # Model development
+├── app.py                     # Streamlit application
+├── dataset.csv                # Dataset
+├── README.md                  # Project documentation
